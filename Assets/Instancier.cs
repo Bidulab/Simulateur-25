@@ -10,6 +10,7 @@ public class Instancier : MonoBehaviour
     public List<Transform> StockPos;
 
     public GameObject ColumnPrefab;
+    public GameObject Stockprefab;
     public List<GameObject> Columns = new List<GameObject>();
 
     public GameObject PlatformPrefab;
@@ -28,30 +29,16 @@ public class Instancier : MonoBehaviour
             Vector3 mirrorPos = t.position;
             mirrorPos.z *= -1;
 
-            for (int i = 0; i < 4; i++)
-            {
-                // Random Y-axis rotation
-                float randomRotationY1 = UnityEngine.Random.Range(0f, 360f);
-                float randomRotationY2 = UnityEngine.Random.Range(0f, 360f);
+            Vector3 mirrorrotation = t.eulerAngles;
+            mirrorrotation.y += 90;
+            mirrorrotation.y *= -1;
+            mirrorrotation.y -= 90;
 
-                GameObject column1 = Instantiate(ColumnPrefab, t.position + new Vector3(0, 0, i * 0.1f), Quaternion.Euler(0, randomRotationY1, 0), this.transform);
-                Columns.Add(column1);
 
-                GameObject column2 = Instantiate(ColumnPrefab, mirrorPos - new Vector3(0, 0, i * 0.1f), Quaternion.Euler(0, randomRotationY2, 0), this.transform);
-                Columns.Add(column2);
-            }
 
-            GameObject platform1A = Instantiate(PlatformPrefab, t.position + new Vector3(0, 0.12f, 0.15f), Quaternion.Euler(0, 90, 0), this.transform);
-            Platforms.Add(platform1A);
-
-            GameObject platform2A = Instantiate(PlatformPrefab, mirrorPos + new Vector3(0, 0.12f, -0.15f), Quaternion.Euler(0, 90, 0), this.transform);
-            Platforms.Add(platform2A);
-
-            GameObject platform1B = Instantiate(PlatformPrefab, t.position + new Vector3(0, 0.135f, 0.15f), Quaternion.Euler(0, 90, 0), this.transform);
-            Platforms.Add(platform1B);
-
-            GameObject platform2B = Instantiate(PlatformPrefab, mirrorPos + new Vector3(0, 0.135f, -0.15f), Quaternion.Euler(0, 90, 0), this.transform);
-            Platforms.Add(platform2B);
+            GameObject stock1 = Instantiate(Stockprefab, t.position, t.rotation, this.transform);
+            GameObject stock2 = Instantiate(Stockprefab, mirrorPos,Quaternion.Euler(mirrorrotation), this.transform);
+            //Platforms.Add(platform2B);
         }
 
         if (rec != null)
