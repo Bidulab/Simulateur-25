@@ -27,6 +27,8 @@ public class Instancier : MonoBehaviour
         {
             Vector3 mirrorPos = t.position;
             mirrorPos.z *= -1;
+            Vector3 mirrorRot = t.eulerAngles;
+            mirrorRot.y *= -1;
 
             for (int i = 0; i < 4; i++)
             {
