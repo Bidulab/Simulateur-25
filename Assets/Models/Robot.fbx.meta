@@ -12,8 +12,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 86236f02fe10c09438b2bd3ce472c639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black.001
+    second: {fileID: 2100000, guid: 65df0ec9c410eb74e9f168548587cb9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: BlackRubber
     second: {fileID: 2100000, guid: 1810e5b42bec111499173159121ce3cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackRubber.001
+    second: {fileID: 2100000, guid: b755ed2535919c44781bc23f08a51e5a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -67,13 +82,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: DiffusePrintRed.002
+    second: {fileID: 2100000, guid: 10449faa62deaa244aa736e5f8a63d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: DiffusePrintWhite
     second: {fileID: 2100000, guid: a9ee7590387770648bc4e68a4ed61014, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: MatMetak
+    second: {fileID: 2100000, guid: 4ec5243bd56bf8141a0b59f34426e176, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metalic
     second: {fileID: 2100000, guid: 90e454bc1cf927b48a493d71885779f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metalic.001
+    second: {fileID: 2100000, guid: 83ac9584089688047b1c6046a00598db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metalic.002
+    second: {fileID: 2100000, guid: 408b11da783ba44419f3094b31d1e817, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: e7100eb6b1562a745ac5c9771641f15e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -87,15 +127,35 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: WoodSide.001
+    second: {fileID: 2100000, guid: a4ca1d85cba70ad479c384d74ea98b34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodSide.002
+    second: {fileID: 2100000, guid: b5be1ba13ae180f4fbee4272849d737b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: WoodTop
     second: {fileID: 2100000, guid: 3de01da9266985b4ba23bc2b7f417b48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodTop.001
+    second: {fileID: 2100000, guid: 294320fe5e0d6ba4fa7af2732f8038f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodTop.002
+    second: {fileID: 2100000, guid: cb296910373e8d347a98cfd6de6afe6e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ubs.001
     second: {fileID: 2100000, guid: 99aabd10c81cb9945b49c1845cf13dae, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
